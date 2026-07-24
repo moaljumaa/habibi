@@ -1,0 +1,12 @@
+services:
+  habibi:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_PATH=/app/data/app.db
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

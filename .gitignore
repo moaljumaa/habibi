@@ -1,0 +1,29 @@
+# deps / build
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# env / secrets
+.env
+.env.local
+.env.production
+credentials.json
+
+# local db (SQLite)
+*.db
+*.db-shm
+*.db-wal
+data/
+
+# scratch
+tmp/
+scripts/tmp/
+log.txt
+
+# os
+.DS_Store
+
+# local agent settings — never tracked, private or public
+.claude/
